@@ -24,7 +24,7 @@ public class Contador {
 
             this.contar(contador);
         } catch (ParametrosInvalidosException error) {
-            System.out.println("O segundo parâmetro deve ser maior que o primeiro e amnos devem ser positivos.");
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro e ambos devem ser positivos.");
         }
     }
 
