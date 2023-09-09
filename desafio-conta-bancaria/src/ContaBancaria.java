@@ -28,13 +28,14 @@ public class ContaBancaria {
 
     public static void criarConta(int numeroConta, String nomeTitular, double saldoInicial){
         ContaBancaria novaConta = new ContaBancaria(numeroConta,nomeTitular,saldoInicial);
-        novaConta.imprimirDadosConta();
+
+        System.out.println("Conta Bancária:");
+        novaConta.exibirInformacoes();
     }
 
-    private void imprimirDadosConta(){
-        System.out.println("Informações:");
-        System.out.println("Conta: " + this.getNumero());
-        System.out.println("Titular: " + this.getTitular());
-        System.out.printf("Saldo: R$ %.1f", this.getSaldo());
+    protected void exibirInformacoes(){
+        System.out.println(this.getTitular());
+        System.out.println(this.getNumero());
+        System.out.printf("Saldo: R$ %.1f\n", this.getSaldo());
     }
 }

@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Desafio {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numeroConta = scanner.nextInt();
-        scanner.nextLine();
         String nomeTitular = scanner.nextLine();
+        int numeroConta = scanner.nextInt();
         double saldo = scanner.nextDouble();
+        float taxaJuros = scanner.nextFloat();
 
-       ContaBancaria.criarConta(numeroConta, nomeTitular, saldo);
+       ContaPoupanca.criarConta(numeroConta, nomeTitular, saldo, taxaJuros);
     }
 }
